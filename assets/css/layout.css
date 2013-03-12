@@ -1,0 +1,18 @@
+/* layout */
+
+.wrapper {
+	width:940px;
+	margin:0 auto;
+	position: relative;
+}
+header {
+	background:#151515;
+	color:#fff;
+}
+section {
+	padding:80px 0;
+}
+.banner {
+	margin:0 auto;
+	text-align: center;
+}
