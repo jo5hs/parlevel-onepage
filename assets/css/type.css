@@ -137,10 +137,44 @@ h1 {
 }
 h2 {}
 h3 {
-	font-family: 'OpenSansBoldItalic';
+	font-family: 'OpenSansSemiBoldItalic';
 	color:#b0962e;
+    font-size: 26px;
+}
+#main section h3 {
+    border-bottom: 5px solid #eaeaea;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 strong > em {
 	font-weight: normal;
+    font-style: normal;
 	font-family: 'OpenSansBoldItalic';
 }
+section p {
+    line-height: 150%;
+    font-family: 'OpenSansLight'
+}
+
+/* icons */
+.icon {
+    font-family: 'Batch';
+    font-weight: normal;
+}
+.icon.red { color: #b24b4b; }
+.icon.green { color: #91b24b;}
+.icon.blue { color: #4bacb2;}
+
+.icon.f149:before {
+    content:'\F149';
+}
+.icon.f15a:before {
+    content:'\F15A';
+}
+.icon.f17c:before {
+    content:'\F17C';
+}
+.icon.f04d:before {
+    content:'\F04D';
+}
+

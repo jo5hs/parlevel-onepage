@@ -1,13 +1,20 @@
 /* modules */
 
+
+/* header */
 header .brand {
 	position: absolute;
-	top:10px;
+	top:5px;
 	left:0;
+}
+header nav {
+	height:60px;
+	padding:20px 0;
+	background:#000;
 }
 header nav ul {
 	margin:0 auto;
-	padding-top:25px;
+	padding-top:15px;
 	padding-right:35px;
 	width: 50%;
 	text-align: center;
@@ -27,7 +34,7 @@ header nav li.contact a {
 	font-size:18px;
 	font-family:'OpenSansLightItalic';
 	position: absolute;
-	top:25px;
+	top:15px;
 	right:0;
 	margin:0;
 }
@@ -35,11 +42,14 @@ header nav li.contact a strong {
 	font-weight: normal;
 	font-family: 'OpenSansItalic';
 }
+header nav li.active a {
+	color:#b0962e;
+}
 header h1 {
 	text-transform: uppercase;
 	width:560px;
 	margin:0 auto;
-	padding:10px 28px 30px 28px;
+	padding:10px 28px 24px 28px;
 	text-align: center;
 	border-bottom:5px solid #d4b743;
 }
@@ -51,10 +61,13 @@ header h1 small {
 	letter-spacing: 2px;
 	font-size:22px;
 	text-transform: none;
+	margin-bottom: 5px;
 }
-
+header .hero {
+	padding-top:52px;
+}
 header .hero-tag {
-	margin:0;
+	margin:34px 0;
 	padding:0;
 	text-align: center;
 }
@@ -62,4 +75,218 @@ header .hero-tag li {
 	display: inline;
 	font-family: 'OpenSansLightItalic';
 	font-size:22px;
+	margin:0 8px;
+	letter-spacing: 1px;
+	font-weight: 100;
 }
+header .hero-tag li:before {
+	content: '\2022';
+	margin-right:7px;
+	font-size:20px;
+}
+header .hero .button-primary {
+	margin:54px auto 8px auto;
+	display: block;
+}
+
+
+/* learn more break */
+p.learn-more {
+	font-family: 'OpenSansLightItalic';
+	color:#d4b743;
+	background:#fff;
+	margin:0;
+	padding:26px;
+	text-align: center;
+	border-bottom: 2px solid #e4e4e4;
+	font-size:26px;
+}
+p.learn-more img {
+	vertical-align: middle;
+	margin-top:-5px;
+	margin-left:5px;
+}
+
+
+/* solutions list */
+#solutions {}
+.solutions-list {
+	min-height: 418px;
+	margin:30px 0;
+	padding:0;
+	list-style-type: none;
+}
+.solutions-list:first-child {
+	margin-top:0;
+}
+.solutions-list li {
+	float:left;
+	margin-left:35px;
+}
+.solutions-list li:first-child {
+	margin-left:0;
+}
+
+.solutions-list .icon {
+	font-size:95px;
+	text-align: center;
+	display: block;
+}
+
+/* software */
+#main #software {
+	overflow: hidden;
+	padding-bottom:40px;
+}
+#software .feature {
+	background: url(../img/imac.png) no-repeat top left;
+	width:614px;
+	height:600px;
+	position: relative;
+	overflow: hidden;
+}
+#software #imac-slider {
+	position: absolute;
+	top: 23px;
+	left: 23px;
+	width: 569px;
+	height: 322px;
+	background: #000;
+}
+#software .feature #nav {
+	position: relative;
+	top:522px;
+	margin:0 auto;
+	text-align: center;
+	z-index: 100;
+}
+#software .feature #nav a {
+	text-indent: -9999em;
+	display: inline-block;
+	height:30px;
+	width:30px;
+	border-radius: 50px;
+	background: rgba(0, 0, 0, .2);
+	margin:0 5px;
+}
+#software .feature #nav a.activeSlide {
+	background: rgba(0, 0, 0, .7);
+}
+
+
+/* stop guessing tag */
+.stop-guessing h2 {
+	text-transform: uppercase;
+	border-top:4px solid #d4b743;
+	border-bottom:4px solid #d4b743;
+	font-size:42px;
+	padding:30px;
+	width:622px;
+	margin:0 auto;
+	font-weight: normal;
+	font-family: 'Coda';
+	letter-spacing: 5px;
+}
+
+
+/* FOOTER */
+
+footer {
+	padding:0 0 80px 0;
+	overflow: hidden;
+	position: relative;
+	/*background: rgb(35,35,35);
+	background: -moz-linear-gradient(left, rgba(35,35,35,1) 45%, rgba(212,183,67,1) 45%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(45%,rgba(35,35,35,1)), color-stop(45%,rgba(212,183,67,1)));
+	background: -webkit-linear-gradient(left, rgba(35,35,35,1) 45%,rgba(212,183,67,1) 45%);
+	background: -o-linear-gradient(left, rgba(35,35,35,1) 45%,rgba(212,183,67,1) 45%);
+	background: -ms-linear-gradient(left, rgba(35,35,35,1) 45%,rgba(212,183,67,1) 45%);
+	background: linear-gradient(to right, rgba(35,35,35,1) 45%,rgba(212,183,67,1) 45%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232323', endColorstr='#d4b743',GradientType=1 );*/
+}
+footer .wrapper {
+	padding-top:40px;
+}
+footer .band {
+	width:50%;
+  /*     Needed for equal height, floated, boxes */
+  padding-bottom:10000px;
+  margin-bottom:-10000px;
+}
+footer .left.band { 
+	float:left;
+	background:#232323;
+	width:45%;
+}
+footer .right.band {
+	float:right;
+	background: #d4b743 url(../img/contact-point.png) no-repeat -31px 78px;
+	width:55%;
+}
+footer .contact-info {
+	width:330px;
+	float:left;
+	color:#d4b743;
+	font-family: 'OpenSansLight';
+	line-height: 160%;
+}
+footer .contact-info h4 {
+	font-family: 'OpenSansItalic';
+	font-size: 24px;
+}
+footer .contact-info h4 strong {
+	font-weight: normal;
+	font-family: 'OpenSansSemiBoldItalic';
+}
+footer address {
+	margin-top:70px;
+	color: #5b5b5b;
+	font-style: normal;
+}
+footer address a, footer address strong {
+	font-family: 'OpenSansSemiBoldItalic';
+	font-weight: normal;
+	color: #5b5b5b;
+}
+footer .form-wrapper {
+	background:#d4b743;
+}
+footer form {
+	float:right;
+	width:440px;
+	padding:30px 30px 30px 78px;
+}
+footer form input, footer form textarea {
+	width:400px;
+	padding:10px 10px 10px 53px;
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px;
+	border-radius:50px;
+	border:none;
+	font-size:16px;
+	font-family: 'OpenSansItalic';
+	color:#8c8c8c;
+	margin-bottom: 20px;
+
+}
+footer form input.text, footer form input.email {
+	height:35px;
+}
+footer form textarea {
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+	border-radius:25px;
+	height:165px;
+	padding-top:15px;
+}
+footer form .submit {
+	width:210px;
+	height:64px;
+	text-indent: -9999em;
+	background: url(../img/save-button.png) no-repeat top left;
+}
+
+footer form .name { background: #fff url(../img/user.png) no-repeat 15px 15px;}
+footer form .email { background: #fff url(../img/mail.png) no-repeat 15px 14px;}
+footer form .phone { background: #fff url(../img/user-card.png) no-repeat 15px 18px;}
+footer form .message { background: #fff url(../img/compose.png) no-repeat 15px 15px;}

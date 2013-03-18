@@ -15,11 +15,19 @@
       <link rel="stylesheet" href="assets/css/main.css">
 
       <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+      <!--[if gte IE 9]>
+        <style type="text/css">
+          .gradient {
+             filter: none;
+          }
+        </style>
+      <![endif]-->
   </head>
   <body>
       <!--[if lt IE 7]>
           <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
       <![endif]-->
+
 
     <header>
         
@@ -54,7 +62,7 @@
     <!-- END HEADER -->
 
     <p class="learn-more" title="Learn more about Parlevel by reading below" role="banner">
-      Learn More 
+      Learn More <span title="Down arrow" class="icon f149"></span>
     </p>
 
     <div id="main" role="main">
@@ -62,15 +70,36 @@
       <section id="solutions">
         <div class="wrapper">
           <ul class="solutions-list">
-            <li>
+            <li class="col">
+              <span title="Exclamation Icon" class="icon f15a red"></span>
               <h3>Low Inventory?</h3>
               <p>Your machine is doing great, but it&rsquo;s sold out! You&rsquo;re missing out on sales! With our system you can track your inventory and know exactly when to stock your machine, and what products to bring.</p>
             </li>
-            <li>
+            <li class="col">
+              <span title="Look back Icon" class="icon f17c green"></span>
               <h3>Expired Products?</h3>
               <p>Never lose inventory because of expired products again! We can help you keep track of those expiration dates, keep fresh inventory in your machines, and keep your customers happy and coming back.</p>
             </li>
-            <li>
+            <li class="col">
+              <span title="Gear Icon" class="icon f04d blue"></span>
+              <h3>Machine Breakdowns?</h3>
+              <p>Didn&rsquo;t know your machine was down until you were physically at its location? Our software can provide you with real-time breakdown alerts so you can keep a pulse on the status of your machines.</p>
+            </li>
+          </ul>
+
+          <ul class="solutions-list">
+            <li class="col">
+              <span title="Exclamation Icon" class="icon f15a red"></span>
+              <h3>Low Inventory?</h3>
+              <p>Your machine is doing great, but it&rsquo;s sold out! You&rsquo;re missing out on sales! With our system you can track your inventory and know exactly when to stock your machine, and what products to bring.</p>
+            </li>
+            <li class="col">
+              <span title="Look back Icon" class="icon f17c green"></span>
+              <h3>Expired Products?</h3>
+              <p>Never lose inventory because of expired products again! We can help you keep track of those expiration dates, keep fresh inventory in your machines, and keep your customers happy and coming back.</p>
+            </li>
+            <li class="col">
+              <span title="Gear Icon" class="icon f04d blue"></span>
               <h3>Machine Breakdowns?</h3>
               <p>Didn&rsquo;t know your machine was down until you were physically at its location? Our software can provide you with real-time breakdown alerts so you can keep a pulse on the status of your machines.</p>
             </li>
@@ -79,30 +108,45 @@
         </div><!-- /.wrapper -->
       </section><!-- /#solutions -->
 
-      <section id="software">
+      <section id="software" class="alt right-col">
         <div class="wrapper">
-          <h3>The Software</h3>
-          <p>Parlevel brings intelligence to your vending operations with an easy to use and intuitive dashboard. Dynamic scheduling, pre-kitting, breakdown alerts, inventory controls and more are all at your fingertips.</p>
-          <p><strong><em>Maximize profits in every corner of your business!</em></strong></p>
 
-          <a href="#contact" class="button button-primary">Contact us <strong>Today!</strong></a>
-
-          <div class="section-feature" role="slider">
-            [ slider goes here ] 
+          <div class="feature" role="slider">
+            <div id="imac-slider">
+              <img src="http://placekitten.com/569/322">
+              <img src="http://placekitten.com/g/569/322">
+              <img src="http://placekitten.com/569/322">
+              <img src="http://placekitten.com/g/569/322">
+            </div>
           </div><!-- /.section-feature -->
+
+          <div class="content col">
+            <h3>The Software</h3>
+            <p>Parlevel brings intelligence to your vending operations with an easy to use and intuitive dashboard. Dynamic scheduling, pre-kitting, breakdown alerts, inventory controls and more are all at your fingertips.</p>
+            <p class="sum-up"><strong><em>Maximize profits in every corner of your business!</em></strong></p>
+
+            <a href="#contact" class="button button-primary">Contact us <strong>Today!</strong></a>
+          </div><!-- /.software-content -->
+
+
+          
 
         </div><!-- /.wrapper -->
       </section><!-- /#software -->
 
-      <section id="hardware">
+      <section id="hardware" class="left-col">
         <div class="wrapper">
-          <h3>The Hardware</h3>
-          <p>Newer machines equipped with the latest MDB technologies are great, however, old machines are still money makers, and replacing them is expensive.</p>
+          <div class="content col">
+            <h3>The Hardware</h3>
+            <p>Newer machines equipped with the latest MDB technologies are great, however, old machines are still money makers, and replacing them is expensive.</p>
 
-          <p><strong><em>Our hardware gives newer and older machines a voice, so you can track what’s happening in every vending machine you own.</em></strong></p>
+            <p class="sum-up"><strong><em>Our hardware gives newer and older machines a voice, so you can track what’s happening in every vending machine you own.</em></strong></p>
 
-          <div class="section-feature">
+            <a href="#contact" class="button button-primary">Contact us <strong>Today!</strong></a>
+          </div><!-- /.content -->
 
+          <div class="feature">
+            <img src="http://placekitten.com/614/500"
           </div><!-- /.section-feature -->
 
         </div><!-- /.wrapper -->
@@ -111,13 +155,16 @@
     </div><!-- /#main -->
     <!-- END MAIN CONTENT -->
 
-    <div class="banner stop-guessing" role="banner">
+    <section class="banner stop-guessing alt" role="banner">
       <div class="wrapper">
         <h2>Stop guessing,<br> start strategizing.</h2>
       </div><!-- /.wrapper -->
-    </div><!-- /.banner.stop-guessing -->
+    </section><!-- /.banner.stop-guessing -->
 
     <footer id="contact" role="contentinfo">
+      <div class="left band"></div>
+      <div class="right band"></div>
+
       <div class="wrapper">
       <div class="contact-info">
         <h4>Contact us <strong>Today!</strong></h4>
@@ -130,21 +177,44 @@
           112 E. Pecan St.<br>
           Weston Centre, 11th Floor<br>
           San Antonio, TX<br>
-          <a href="mailto:info@parlevelsystems.com" title="Email us">info@parlevelsystems.com</a>
+          <a href="mailto:info@parlevelsystems.com" title="Email us">info@parlevelsystems.com</a><br>
           <a href="tel:+12105555555" title="Call us">210.555.5555</a>
         </address>
 
       </div>
 
-      <form>
-      </form>
+      <form id="form1" name="form1" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://parlevel.wufoo.com/forms/z7x3p3/#public">
+
+
+        <label class="desc hide" id="title1" for="Field1">Your Name</label>
+        <input placeholder="Your Name" id="Field1" name="Field1" type="text" class="field text medium name" value="" maxlength="255" tabindex="1" onkeyup="" />
+
+        <label class="desc hide" id="title2" for="Field2">Your Email</label>
+        <input placeholder="Your Email" id="Field2" name="Field2" type="email" class="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="2" />
+
+        <label class="desc hide" id="title7" for="Field7">Your Phone Number</label>
+        <input placeholder="Your Phone Number" id="Field7" name="Field7" type="text" class="field text medium phone" value="" maxlength="255" tabindex="3" onkeyup="" />
+
+        <label class="desc hide" id="title4" for="Field4">Your Message</label>
+        <textarea placeholder="Your Message" id="Field4" name="Field4" class="field textarea medium message" spellcheck="true" rows="5" cols="10" tabindex="4" onkeyup=""></textarea>
+
+
+        <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Submit">
+
+
+        <span class="hide">
+        <label for="comment">Do Not Fill This Out</label>
+        <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+        <input type="hidden" id="idstamp" name="idstamp" value="uec9L4vAC7uI0L5gA761iKYcLFiCEwOOLDnTZ2S8xNM=" />
+
+      </form> 
     </footer><!-- /#contact -->
     <!-- END FOOTER -->
 
 
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-
+      <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="assets/js/vendor/jquery.cycle.all.js"></script>
       <script src="assets/js/plugins.js"></script>
       <script src="assets/js/main.js"></script>
   </body>
